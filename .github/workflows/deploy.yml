@@ -33,18 +33,13 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Copy to root for GitHub Pages
-        run: |
-          cp -r _site/* .
-          cp -r _site/.[^.]* . 2>/dev/null || true
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: './_site'
 
   deploy:
     environment:
