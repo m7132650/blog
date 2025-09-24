@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>My Blog</title>
+    <link>https://m7132650.github.io/blog</link>
+    <description>Minimal blog feed</description><lastBuildDate>Wed, 24 Sep 2025 04:48:34 GMT</lastBuildDate><item>
+      <title>Why Typography Matters More Than You Think</title>
+      <link>https://m7132650.github.io/blog/posts/typography-matters/</link>
+      <guid>https://m7132650.github.io/blog/posts/typography-matters/</guid>
+      <pubDate>Wed, 24 Sep 2025 04:48:34 GMT</pubDate><description>The subtle art of choosing fonts that serve your content, not distract from it.</description></item><item>
+      <title>The Joy of Writing Online</title>
+      <link>https://m7132650.github.io/blog/posts/the-joy-of-writing/</link>
+      <guid>https://m7132650.github.io/blog/posts/the-joy-of-writing/</guid>
+      <pubDate>Wed, 24 Sep 2025 04:48:28 GMT</pubDate><description>Why I started this blog and what I hope to discover along the way.</description></item><item>
+      <title>Why I Chose Static Site Generation</title>
+      <link>https://m7132650.github.io/blog/posts/building-static-sites/</link>
+      <guid>https://m7132650.github.io/blog/posts/building-static-sites/</guid>
+      <pubDate>Wed, 24 Sep 2025 04:48:21 GMT</pubDate><description>The benefits of building fast, simple websites that just work.</description></item><item>
+      <title>The Art of Minimalism in Web Design</title>
+      <link>https://m7132650.github.io/blog/posts/minimalism-in-design/</link>
+      <guid>https://m7132650.github.io/blog/posts/minimalism-in-design/</guid>
+      <pubDate>Wed, 24 Sep 2025 04:48:15 GMT</pubDate><description>Why less is often more when it comes to creating beautiful, functional websites.</description></item><item>
+      <title>Hello World</title>
+      <link>https://m7132650.github.io/blog/posts/hello-world/</link>
+      <guid>https://m7132650.github.io/blog/posts/hello-world/</guid>
+      <pubDate>Wed, 24 Sep 2025 03:18:13 GMT</pubDate><description>A first post.</description></item></channel>
+</rss>

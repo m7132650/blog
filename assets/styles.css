@@ -1,0 +1,109 @@
+:root {
+  --max-width: 740px;
+  --fg: #111111;
+  --bg: #ffffff;
+  --muted: #6b6b6b;
+  --link: #d2691e;
+  --brand: #0f0f0f;
+}
+
+/* Haruto font for brand */
+@font-face {
+  font-family: 'Haruto';
+  src: url('/assets/fonts/Haruto.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: var(--fg);
+  background: var(--bg);
+  font-family: "Cardo", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: var(--max-width);
+  padding: 2rem 1rem;
+  margin: 0 auto;
+}
+
+.site-header, .site-footer {
+  border-bottom: 1px solid #eaeaea;
+}
+.site-footer { border-top: 1px solid #eaeaea; border-bottom: 0; }
+
+.nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem 1.25rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.nav a {
+  text-decoration: none;
+  color: var(--link);
+}
+.nav a:hover { text-decoration: underline; }
+
+.nav .brand {
+  margin-right: auto;
+  font-family: "Haruto", "Space Grotesk", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  color: var(--brand);
+  text-decoration: none;
+}
+.nav .brand:hover { text-decoration: none; opacity: 0.85; }
+
+h1, h2, h3 {
+  line-height: 1.25;
+  margin: 1.5rem 0 0.5rem;
+}
+
+h1 { font-weight: 700; font-size: 2rem; }
+h2 { font-weight: 700; font-size: 1.5rem; }
+h3 { font-weight: 700; font-size: 1.25rem; }
+
+p { margin: 0.75rem 0; }
+time, .muted { color: var(--muted); }
+
+.post-list { list-style: none; padding: 0; margin: 0; }
+.post-list li { margin: 0 0 1.1rem; }
+.post-list a { color: var(--fg); text-decoration: none; }
+.post-list a:hover { text-decoration: underline; }
+
+article { margin: 2.25rem 0; }
+article h1 { margin-top: 0.5rem; }
+
+/* Better reading width and paragraph spacing */
+.container p { text-wrap: pretty; }
+.container p + p { margin-top: 0.9rem; }
+
+/* Links like Tom's: subtle underline on hover */
+a { color: var(--link); }
+a:hover { text-decoration-thickness: 2px; }
+
+/* Haruto font for brand */
+@font-face {
+  font-family: 'Haruto';
+  src: url('/assets/fonts/haruto.woff2') format('woff2'),
+       url('/assets/fonts/haruto.woff') format('woff'),
+       url('/assets/fonts/haruto.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.nav .brand {
+  font-family: "Haruto", "Space Grotesk", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
