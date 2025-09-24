@@ -1,0 +1,30 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+{%- set posts = collections.posts | reverse -%}
+{%- set metadata = {
+  title: "My Blog",
+  url: "https://example.com",
+  description: "Minimal blog feed"
+} -%}
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>{{ metadata.title }}</title>
+    <link>{{ metadata.url }}</link>
+    <description>{{ metadata.description }}</description>
+    {%- if posts and posts.length -%}
+    <lastBuildDate>{{ (posts | first).date.toUTCString() }}</lastBuildDate>
+    {%- endif -%}
+    {%- for post in posts -%}
+    <item>
+      <title>{{ post.data.title }}</title>
+      <link>{{ metadata.url }}{{ post.url }}</link>
+      <guid>{{ metadata.url }}{{ post.url }}</guid>
+      <pubDate>{{ post.date.toUTCString() }}</pubDate>
+      {%- if post.data.description -%}<description>{{ post.data.description | safe }}</description>{%- endif -%}
+    </item>
+    {%- endfor -%}
+  </channel>
+</rss>
